@@ -1,0 +1,253 @@
+/* ---------------------
+      bodys style
+----------------------- */
+body{
+    margin: 0%;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* header style */
+header{
+    display: flex;
+    margin-left: 160px;
+}
+/* intro part */
+
+.first-part{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.intro{
+    width: 582px;
+    height: 270px;
+}
+.intro > h1{
+    font-size: 50px;
+}
+.all-anchor{
+
+    text-decoration: none;
+    color: white;
+}
+.all-anchor.button{
+    
+    padding: 7px 20px;
+    background-color: rgb(165, 11, 127);
+    border-radius: 25px;
+
+}
+.intro-img{
+    width: 440px;
+    height: 414px;
+}
+.intro-img img{
+    width: 80%;
+    transition: transform 1s ease-in;
+}
+.intro-img img:hover{
+    transform: rotate(30deg);
+}
+/* collection part */
+.second-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.top-collection{
+    width: 1047px;
+    height: 1662px;
+
+}
+.top-collection>h2{
+    text-align: center;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.collection{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px grey;
+    
+}
+.collection img{
+    transition: transform 1s ease-in-out;
+
+}
+.collection img:hover{
+    transform: scale(1.2);
+}
+.fa-star{
+    color: rgb(255, 196, 0);
+    font-size: 15px;
+}
+.fa-star.unfilled{
+    color: grey;
+}
+.see-more{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    
+}
+.see-more a{
+    color: rgb(165, 11, 127);
+    font-weight: 900;
+}
+/* last part */
+.last-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.social-img{
+   width: 100%;
+   margin-left: 15%;
+}
+.social-img img{
+    width: 70%;
+}
+.about{
+    width: 100%;
+    margin-right: 15%;
+}
+
+
+
+/* footer style */
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(27, 1, 32);
+    color: white;
+    
+}
+.fa-copyright{
+    color: silver;
+}
+.fab{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+/* ----------------------
+        Media quaries
+        ---------------------- */
+/* Mobile Divices */
+
+@media only screen and (max-width:688px) {
+    header {
+        
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    .first-part{
+        flex-direction: column;
+    }
+    .intro{
+     width: 100%;
+     height: 100%;
+     text-align: center;
+    }
+    .intro > h1 {
+     font-size: 35px;
+     margin-bottom: 25px;
+ }
+ .intro-img{
+    margin-left: 80px;
+    margin-top: 25px;
+ }
+ .top-collection{
+    width: 100%;
+    height: 100%;
+ }
+ .collections {
+    
+    grid-template-columns: repeat(1,1fr);
+   
+}
+.collection img{
+   width: 100%;
+}
+.see-more{
+    margin-top: 20px;
+}
+.last-part{
+    flex-direction: column;
+}
+.social-img {
+    width: 100%;
+    margin-left: 24%;
+}
+.about {
+    width: 70%;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-left: 10%;
+}
+
+}
+/* Tablet Devices */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    header {
+        
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .first-part{
+        flex-direction: column;
+    }
+    .intro{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+       }
+       .intro-img{
+        margin-left: 80px;
+        margin-top: 25px;
+     }
+     .collections {
+    
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .top-collection {
+        width: 100%;
+        height: 100%;
+    }
+    .collection img{
+        width: 100%;
+     }
+     .see-more{
+         margin-top: 20px;
+     }
+     .last-part{
+        flex-direction: column;
+    }
+    .social-img {
+        width: 100%;
+        margin-left: 24%;
+    }
+    .about {
+        width: 70%;
+        margin-bottom: 15px;
+        text-align: center;
+        padding-left: 10%;
+    }
+    
+}
